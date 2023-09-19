@@ -1,0 +1,117 @@
+* {
+  font-family: "Roboto", sans-serif; /*Fonte da aplicação*/
+  margin: 0; /*Zerando margem  automatica do navegador*/
+  padding: 0; /*zerando preenchimento automatico do navegador */
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #772fd3; /*Cor de fundo do corpo*/
+}
+
+.logo {
+  width: 300px;
+  display: block; /*Elemento se torna um bloco*/
+  margin: 20px auto; /*centraliza o emelemento*/
+}
+
+main {
+  width: 375px; /*Largura da do elemento */
+  border-radius: 20px; /*Bordas do elemento*/
+  background-color: #f4f4f4; /*Cor de fundo da aplicação*/
+  margin: 0 auto 40px; /*centraliza o emelemento*/
+  padding: 44px 24px 23px; /*aplicando prenchimento no elemento*/
+}
+
+label {
+  color: #777; /*Cor do elemento*/
+  font-size: 14px; /*tamanho da fonte do  elemento*/
+  font-weight: 400; /*espessura da fonte*/
+}
+
+/*Estilo sendo aplicado para sleect e input*/
+select,
+input {
+  border: 1px solid #bbb; /*Borda do elemento*/
+  background: #fff; /*Cor do fundo do  elemento */
+  border-radius: 4px; /*Borda do elemento*/
+  height: 48px; /*altura do elemento*/
+  width: 100%; /*largura do elemento*/
+  margin-bottom: 24px; /*Margem inferior */
+  appearance: none; /* setas do select */
+  padding-left: 18px; /*Prenchimento lado esquerdo*/
+  font-weight: 700; /*espessura da fonte*/
+  font-size: 16px; /*Tamanho da fonte */
+  color: #555555; /*Cor aplicada no texto do elemento*/
+  cursor: pointer; /*Cursor do tipo ponteiro*/
+}
+
+button {
+  border: none; /* Sem borda*/
+  background-color: #772fd3; /*Cor de fundo do elemento*/
+  border-radius: 5px; /* Raio da borda*/
+  width: 100%; /*Largura do  elemento*/
+  height: 48px; /*Altura do elemento*/
+  color: #fff; /*Cor do elemento*/
+  font-size: 18px; /*Tamanho da fonte do elemento*/
+  font-weight: 700; /*espessura da fonte*/
+  cursor: pointer; /*Cursor do tipo ponteiro*/
+}
+
+/*Opacidade do botão quando clicar nele*/
+button:hover {
+  opacity: 0.8; /*Opacidade aplicada de 0.8*/
+}
+
+button:active {
+  opacity: 0.6; /*Opacidade aplicada de 0.6*/
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+section {
+  border-radius: 20px; /*Borda do elemento*/
+  border: 1px solid #772fd3; /*Cor da borda*/
+  margin-top: 36px; /*Margem superior do elemento*/
+  padding: 12px; /*preenchimento do elemento*/
+  display: flex; /*Escolhe em qual local fica os itens*/
+  flex-direction: column; /* Direção flexivel do tipo coluna*/
+  align-items: center; /* Alinha os itens no centro*/
+}
+
+.arrow-img,
+.currency-img,
+.currency-image {
+  margin: 15px 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.currency-box {
+  display: flex; /*Escolhe em qual local fica os itens*/
+  flex-direction: column; /* Direção flexivel do tipo coluna*/
+  align-items: center; /* Alinha os itens no centro*/
+  gap: 4px; /* distância entre os itens - deixa no mesmo padrão*/
+}
+
+.currency {
+  color: #777777; /*Cor do elemento*/
+  font-size: 14px; /*Tamanho da fonte do elemento */
+}
+
+.currency-value-to-convert,
+.currency-value-converted {
+  color: #555; /*Cor do elemento*/
+  font-size: 20px; /*Tamanho da fonte do elemento */
+  font-weight: 700px; /*Espessura da fonte do elemento */
+}
+
+/*Realiza as configurações  abaixo quando o site e aberto em celulares*/
+@media screen and (max-width: 500px) {
+  .logo {
+    display: none; 
+  }
+
+  body {
+    background-color: #f4f4f4;
+  }
+}
