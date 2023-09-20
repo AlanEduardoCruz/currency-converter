@@ -108,7 +108,7 @@ section {
 /*Realiza as configurações  abaixo quando o site e aberto em celulares*/
 @media screen and (max-width: 500px) {
   .logo {
-    display: none; 
+    display: none;
   }
 
   body {
