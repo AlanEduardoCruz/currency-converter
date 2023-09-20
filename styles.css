@@ -114,4 +114,8 @@ section {
   body {
     background-color: #f4f4f4;
   }
+
+  option {
+    word-spacing: 2px;
+  }
 }
