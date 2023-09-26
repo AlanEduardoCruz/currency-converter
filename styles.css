@@ -105,6 +105,10 @@ section {
   font-weight: 700px; /*Espessura da fonte do elemento */
 }
 
+.currency-value-converted {
+  border: 50px, red  ;
+}
+
 /*Realiza as configurações  abaixo quando o site e aberto em celulares*/
 @media screen and (max-width: 500px) {
   .logo {
@@ -115,7 +119,5 @@ section {
     background-color: #f4f4f4;
   }
 
-  .currency-select {
-    word-spacing: 2px;
-  }
 }
+

@@ -1,4 +1,4 @@
-const convertButton = document.querySelector(".convert-button");
+const convertButton = document.querySelector(".convert-button"); // valor do button
 
 const currencySelect = document.querySelector("#currency-select"); // valor do select
 
