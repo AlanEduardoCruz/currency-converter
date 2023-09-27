@@ -1,5 +1,4 @@
 const convertButton = document.querySelector(".convert-button"); // valor do button
-
 const currencySelect = document.querySelector("#currency-select"); // valor do select
 
 //Função criada para realizar a conversão
@@ -17,7 +16,7 @@ function convertValues() {
   const dolarToday = 4.92; // Valor do Dolar
   const euroToday = 5.28; // Valor do Euro
   const libraToday = 6.03; // Valor do Libra
-  const bitcoinToday = 0.00000767;
+  const bitcoinToday = 0.00000767; //Valor Bitcoin
 
   if (currencySelect.value == "dolar") {
     //Formata o numero após realizar os calculos de acordo com sua caracteristica
@@ -46,7 +45,7 @@ function convertValues() {
   if (currencySelect.value == "bitcoin") {
     currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
       style: "currency",
-      currency: "BT",
+      currency: "BTC",
       minimumFractionDigits: 8,
     }).format(inputCurrencyValue * bitcoinToday);
   }
@@ -84,9 +83,10 @@ function changeCurrency() {
   if (currencySelect.value == "bitcoin") {
     currencyName.innerHTML = "Bitcoin";
     currencyImg.src = "./assets/bitcoin.png";
+    
   }
 }
+// Chama função a partir de um evento
 
 currencySelect.addEventListener("change", changeCurrency);
-
-convertButton.addEventListener("click", convertValues); //acompanha evento e chama a função quando clicar no botão
+convertButton.addEventListener("click", convertValues); 
