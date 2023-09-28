@@ -12,21 +12,10 @@
 
 <p> :heavy_check_mark: Projeto aberto em mobile.</p>
 
-<div class ="image-container" > 
-<img src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/desktop.png">
-<img  src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/mobile.png" >
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/desktop.png" alt="Desktop" width="200" style="margin-right: 10px;">
+  <img src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/mobile.png" alt="Mobile" width="200">
 </div>
-
-.image-container {
-  display: flex;
-  align-items: center;
-}
-
-.image-container img {
-  width: 100%; /* As imagens ocuparão 100% da largura do contêiner */
-  max-width: 200px; /* Defina o tamanho máximo desejado para as imagens */
-  margin-right: 10px; /* Espaço entre as imagens, opcional */
-}
 
 
 
