@@ -95,7 +95,7 @@ function resetValues() {
   const currencyName = document.querySelector("#currency-name");
 
   //Define os valores iniciais zero para as variaveis
-  inputCurrencyValue.value = 0.00;
+  inputCurrencyValue.value = 0.0;
 
   //Redefine o valor  do elemento para a opção padrão
   currencySelect.selectedIndex = 0;
@@ -110,7 +110,7 @@ function resetValues() {
   currencyConverted.innerHTML = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
-  }).format(0.00);
+  }).format(0.0);
 
   //Redefine a imagem  para a opção padrão
   currencyImg.src = "./assets/dolar.png";
@@ -121,8 +121,6 @@ function resetValues() {
   //Monitora quando clico no botão
   console.log("Cliquei");
 }
-
-//Redefinir os valores para os valores originais
 
 // Chama função a partir de um evento
 resetValue.addEventListener("click", resetValues);
