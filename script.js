@@ -89,20 +89,28 @@ function changeCurrency() {
 
 function resetValues() {
   const inputCurrencyValue = document.querySelector(".input-value");
-  const currencyValueConverted = document.querySelector(".currency-value-converted");
-  const currencySelect = document.querySelector("#currency-select");
+  const currencyConvert = document.querySelector("#currency-convert");
+  const currencyConverted = document.getElementById("currency-converted");
   const currencyImg = document.querySelector(".currency-img");
   const currencyName = document.querySelector("#currency-name");
 
   //Define os valores iniciais zero para as variaveis
-  inputCurrencyValue.value = 0;
-  currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  }).format(0);
+  inputCurrencyValue.value = 0.00;
 
   //Redefine o valor  do elemento para a opção padrão
   currencySelect.selectedIndex = 0;
+
+  //Redefine o valor do elemento para oção padrão
+  currencyConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(0.0);
+
+  //Redefine valor do elemento para opção padrão
+  currencyConverted.innerHTML = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(0.00);
 
   //Redefine a imagem  para a opção padrão
   currencyImg.src = "./assets/dolar.png";
