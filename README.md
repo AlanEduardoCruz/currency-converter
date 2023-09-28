@@ -10,12 +10,13 @@
 <p> :heavy_check_mark: O projeto consiste em um conversor de moedas que converte valores em real para moedas em Dólar, Euro, Libra e Bitcoin. </p>
 <br>
 
+<div align="center">
 <p> :heavy_check_mark: Projeto aberto no desktop</p>
 <img src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/desktop.png" width = "400px" >
 
 <p> :heavy_check_mark: Projeto aberto em mobile.</p>
 <img  src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/mobile.png" height = "400px">
-
+</div>
 
 
 
