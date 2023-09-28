@@ -15,6 +15,6 @@
 <img src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/desktop.png" width = "400px" >
 
 <p> :heavy_check_mark: Projeto aberto em mobile.</p>
-<img  src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/mobile.png" width = "400px">
+<img  src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/mobile.png" width = "200px">
 
 
