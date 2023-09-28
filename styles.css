@@ -108,6 +108,9 @@ section {
 .currency-value-converted {
   border: 50px, red  ;
 }
+.reset-value {
+  margin-top: 8px;
+}
 
 /*Realiza as configurações  abaixo quando o site e aberto em celulares*/
 @media screen and (max-width: 500px) {

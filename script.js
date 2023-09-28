@@ -1,5 +1,6 @@
 const convertButton = document.querySelector(".convert-button"); // valor do button
 const currencySelect = document.querySelector("#currency-select"); // valor do select
+const resetValue = document.querySelector(".reset-value");
 
 //Função criada para realizar a conversão
 function convertValues() {
@@ -83,10 +84,41 @@ function changeCurrency() {
   if (currencySelect.value == "bitcoin") {
     currencyName.innerHTML = "Bitcoin";
     currencyImg.src = "./assets/bitcoin.png";
-    
   }
 }
-// Chama função a partir de um evento
 
+function resetValues() {
+  const inputCurrencyValue = document.querySelector(".input-value");
+  const currencyValueConverted = document.querySelector(
+    ".currency-value-converted"
+  );
+  const currencySelect = document.querySelector("#currency-select");
+  const currencyImg = document.querySelector(".currency-img");
+  const currencyName = document.querySelector(".currency");
+
+  //Define os valores iniciais zero para as variaveis
+  inputCurrencyValue.value = 0;
+  currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(0);
+
+  //Redefine o valor  do elemento para a opção padrão
+  currencySelect.selectedIndex = 0;
+
+  //Redefine a imagem  para a opção padrão
+  currencyImg.src = "./assets/dolar.png";
+
+  //Redefine o valor  do elemento para a opção padrão
+  currencyName.selectedIndex = 0;
+
+  //Monitora quando clico no botão
+  console.log("Cliquei");
+}
+
+//Redefinir os valores para os valores originais
+
+// Chama função a partir de um evento
+resetValue.addEventListener("click", resetValues);
 currencySelect.addEventListener("change", changeCurrency);
-convertButton.addEventListener("click", convertValues); 
+convertButton.addEventListener("click", convertValues);
