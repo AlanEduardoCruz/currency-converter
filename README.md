@@ -11,12 +11,15 @@
 <br>
 
 <div align="left">
-<p> :heavy_check_mark: Projeto aberto no desktop</p>
-<img src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/desktop.png" width = "400px" >
+    <img width="500px" title="Projeto aberto no desktop" src=""/>
+<div>
 
-<p> :heavy_check_mark: Projeto aberto em mobile.</p>
-<img  src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/mobile.png" height = "400px">
-</div>
+<div align="justify">
+    <img width="200px" title="""/>
+<div>
+
+
+
 
 
 
