@@ -66,7 +66,7 @@ function changeCurrency() {
   // Condição para tomar uma decisão
   if (currencySelect.value == "dolar") {
     // compara valor so currencySelect
-    currencyName.innerHTML = "Dólar americano"; // Se a condição for verdadeira troca o valor / nome do elemento
+    currencyName.innerHTML = "Dólar Americano"; // Se a condição for verdadeira troca o valor / nome do elemento
     currencyImg.src = "./assets/dolar.png"; // Se a condição for verdadeira troca a imagem do elemento
   }
   // condição para tomar uma decisão
@@ -89,12 +89,10 @@ function changeCurrency() {
 
 function resetValues() {
   const inputCurrencyValue = document.querySelector(".input-value");
-  const currencyValueConverted = document.querySelector(
-    ".currency-value-converted"
-  );
+  const currencyValueConverted = document.querySelector(".currency-value-converted");
   const currencySelect = document.querySelector("#currency-select");
   const currencyImg = document.querySelector(".currency-img");
-  const currencyName = document.querySelector(".currency");
+  const currencyName = document.querySelector("#currency-name");
 
   //Define os valores iniciais zero para as variaveis
   inputCurrencyValue.value = 0;
@@ -110,7 +108,7 @@ function resetValues() {
   currencyImg.src = "./assets/dolar.png";
 
   //Redefine o valor  do elemento para a opção padrão
-  currencyName.selectedIndex = 0;
+  currencyName.innerHTML = "Dólar Americano";
 
   //Monitora quando clico no botão
   console.log("Cliquei");
