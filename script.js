@@ -12,7 +12,6 @@ function convertValues() {
     ".currency-value-converted"
   ); // Outras moedas
 
-  console.log(currencySelect.value); //mostra valor  do currency select no console
 
   const dolarToday = 4.92; // Valor do Dolar
   const euroToday = 5.28; // Valor do Euro
@@ -117,9 +116,6 @@ function resetValues() {
 
   //Redefine o valor  do elemento para a opção padrão
   currencyName.innerHTML = "Dólar Americano";
-
-  //Monitora quando clico no botão
-  console.log("Cliquei");
 }
 
 // Chama função a partir de um evento
