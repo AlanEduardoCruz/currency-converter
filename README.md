@@ -11,10 +11,9 @@
 <br>
 
 <div align="justify">
-    <img width="400px" title="Projeto aberto em Desktop" src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/desktop.png"/>
+    <img title="Projeto aberto em Desktop" src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/desktop.png"/>
 <div>
-
-<div align="justify">
+<div align="center">
     <img width=" 400px" title="Projeto aberto em Mobile" src="https://github.com/AlanEduardoCruz/currency-converter/blob/master/assets/mobile.png"/>
 <div>
 
