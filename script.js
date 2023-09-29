@@ -13,10 +13,10 @@ function convertValues() {
   ); // Outras moedas
 
 
-  const dolarToday = 4.92; // Valor do Dolar
-  const euroToday = 5.28; // Valor do Euro
-  const libraToday = 6.03; // Valor do Libra
-  const bitcoinToday = 0.00000767; //Valor Bitcoin
+  const dolarToday =5.01; // Valor do Dolar
+  const euroToday = 5.30; // Valor do Euro
+  const libraToday = 6.12; // Valor do Libra
+  const bitcoinToday = 0.0000075; //Valor Bitcoin
 
   if (currencySelect.value == "dolar") {
     //Formata o numero após realizar os calculos de acordo com sua caracteristica
